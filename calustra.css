@@ -1,0 +1,883 @@
+@font-face {
+    font-family: freight;
+    src: url(freight-big-pro-serif-font-family-1691372452-0/Freight-Big-Pro-Light-Italic.otf);
+}
+@font-face {
+    font-family: freight-s;
+    src: url(freight-big-pro-serif-font-family-1691372452-0/Freight-Big-Pro-Book.otf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #3C1A1A;
+}
+.main{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.nav {
+    height: 13vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999999999999999;
+    color: #ffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 70px;
+    font-size: 19px;
+}
+
+.nav h3 {
+    font-weight: 500;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+.nav h2 {
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav h2::after{
+   content: ".....";
+   height: 60px;
+   width: 60px;
+   background-color: #fff;
+   border-radius: 50%;
+}
+/* .nav:hover h2::after{
+    content: "........";
+    height: 80px;
+    width: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+ } */
+ .nav svg{
+    mix-blend-mode: difference;
+ }
+@media (max-width:600px) {
+    .nav {
+        height: 8vh;
+        width: 100%;
+        position: fixed;
+        z-index: 999999999999999;
+        color: #ffff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 19px;
+    }
+    .nav h3 {
+        font-weight: 500;
+        font-size: 15px;
+        text-transform: uppercase;
+        display: none;
+    }
+    .nav h2 {
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: none;
+    }
+    .nav h2::after{
+       content: ".....";
+       height: 60px;
+       width: 60px;
+       background-color: #fff;
+       border-radius: 50%;
+       display: none;
+    }
+}
+.page1 {
+    height: 185vh;
+    width: 100%;
+    background-color: #dadada;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/4086/Homepage_IlSentimento_Cover2_CaLustra23.avif);
+    background-size: cover;
+    background-position-y: bottom;
+    color: #fff;
+    padding-top: 240px;
+    position: relative;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.page1 p{
+    font-size: 24px;
+    margin-left: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.page1 h1{
+    font-size: 150px;
+    font-weight: 200;
+    margin-left: 20%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.page1 h2{
+    font-size: 150px;
+    font-family: freight;
+    font-weight: 100;
+    margin-left: 25%;
+    margin-bottom: 30px;
+}
+.page1 h3{
+    margin-left: 45%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.message{
+    height: 50px;
+    width: 140px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.5s;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.message:hover{
+    height: 90px;
+    width: 400px;
+}
+.message i{
+    font-size: 40px;
+    font-weight: 100;
+}
+.message h5{
+    display: none;
+    transition: all ease 1s;
+    font-weight: 300;
+}
+.message:hover h5{
+    font-size: 19px;
+    display: flex;
+}
+@media (max-width:600px) {
+    .page1 {
+        height: 105vh;
+        width: 100%;
+        background-color: #dadada;
+        border-bottom-left-radius: 500px;
+        border-bottom-right-radius: 500px;
+        background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/4086/Homepage_IlSentimento_Cover2_CaLustra23.avif);
+        background-size: cover;
+        background-position-y: bottom;
+        color: #fff;
+        padding-top: 240px;
+        position: relative;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .page1 p{
+        font-size: 15px;
+        margin-left: 0%;
+        margin-bottom: 50px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .page1 h1{
+        font-size: 50px;
+        font-weight: 200;
+        margin-left: 3%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .page1 h2{
+        font-size: 50px;
+        font-family: freight;
+        font-weight: 100;
+        margin-left: 5%;
+        margin-bottom: 30px;
+    }
+    .page1 h3{
+        margin-left: 45%;
+        display: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .message{
+        height: 50px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all ease 0.5s;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .message:hover{
+        height: 50px;
+        width: 100px;
+    }
+    .message i{
+        font-size: 30px;
+        font-weight: 100;
+    }
+    .message h5{
+        display: none;
+        transition: all ease 1s;
+        font-weight: 300;
+    }
+    .message:hover h5{
+        font-size: 19px;
+        display: none;
+    }
+}
+.page2{
+    min-height: 140vh;
+    width: 100%;
+    background-color: #3C1A1A;
+    padding: 0px 150px;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+}
+.page2 h1{
+    font-size: 250px;
+    text-align: center;
+    font-family: freight-s;
+    color: #fff;
+   font-weight: 200;
+   margin-bottom: -70px;
+
+}
+.page2 p{
+    font-size: 25px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    /* margin-bottom: -70px; */
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.discover{
+    height: 60px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40%;
+    transition: all ease 0.5s;
+}
+.discover:hover{
+    height: 80px;
+}
+.discover h5{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+}
+.circle{
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+#c1{
+    left: 10%;
+    top: 40%;
+    background-image: url(https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmVlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    background-position: center;
+    background-size: cover;
+}
+#c2{
+    right: 10%;
+    top: 40%;
+    background-image: url(https://images.unsplash.com/photo-1531510960996-1b17764f4b6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=876&q=80);
+    background-position: center;
+    background-size: cover;
+}
+#c3{
+    right: 30%;
+    top: 50%;
+    background-image: url(https://images.unsplash.com/photo-1545608508-78f351665a1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width:600px) {
+    .page2{
+        min-height: 100vh;
+        width: 100%;
+        background-color: #3C1A1A;
+        padding: 50px 100px;
+        position: relative;
+        flex-direction: column;
+        display: flex;
+    }
+    .page2 h1{
+        font-size: 50px;
+
+        font-family: freight-s;
+        color: #fff;
+        flex-shrink: 0;
+        text-align: center;
+       font-weight: 200;
+       margin-bottom: 5dvh;
+    
+    }
+    .page2 p{
+        font-size: 15px;
+        color: #fff;
+        margin-top: 20px;
+        margin-bottom: 150px;
+        /* margin-bottom: -70px; */
+        text-align: center;
+        display: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .discover{
+        height: 40px;
+        width: 150px;
+        background-color: #fff;
+        border-radius: 50px;
+        margin-bottom: 50px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
+        transition: all ease 0.5s;
+        margin-top: 50%;
+       
+    }
+    .discover:hover{
+        height: 60px;
+    }
+    .discover h5{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .circle{
+        height: 100px;
+        width: 100px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        display: none;
+    }
+    #c1{
+        left: 10%;
+        top: 40%;
+        background-image: url(https://images.unsplash.com/photo-1600788886242-5c96aabe3757?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmVlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+        background-position: center;
+        background-size: cover;
+    }
+    #c2{
+        right: 10%;
+        top: 40%;
+        background-image: url(https://images.unsplash.com/photo-1531510960996-1b17764f4b6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=876&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    #c3{
+        right: 30%;
+        top: 50%;
+        background-image: url(https://images.unsplash.com/photo-1545608508-78f351665a1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+        background-position: center;
+        background-size: cover;
+    } 
+}
+.page3{
+   min-height: 100vh;
+   background-color: red;
+   background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/3954/Homepage_IlSentimento_bannerpannello_CaLustra23.avif);
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+}
+.manifesto{
+    height: 20vh;
+    width:100%;
+    color: #fff;
+    margin-right: -200%;
+}
+.manifesto h1{
+    font-size: 150px;
+    font-weight: 200;
+    font-family: freight-s;
+    
+}
+.founding{
+    height: 650px;
+    width: 650px;
+    background-color: #fff;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    right: -200%;
+    bottom: -10%;
+}
+.founding h2{
+    font-weight: 100;
+    font-family: freight-s;
+}
+@media (max-width:600px) {
+    .page3{
+        min-height: 100vh;
+        background-color: red;
+        background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/3954/Homepage_IlSentimento_bannerpannello_CaLustra23.avif);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+     }
+     .manifesto{
+         height: 20vh;
+         width:100%;
+         color: #fff;
+         margin-right: -200%;
+     }
+     .manifesto h1{
+         font-size: 40px;
+         flex-shrink: 0;
+         font-weight: 200;
+         font-family: freight-s;
+         
+     }
+     .founding{
+         height: 300px;
+         width: 300px;
+         background-color: #fff;
+         position: absolute;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         text-align: center;
+         font-size: 10px;
+         right: -200%;
+         bottom: -10%;
+         display: none;
+     }
+     .founding h2{
+         font-weight: 100;
+         font-family: freight-s;
+     }
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    padding-left: 10vw;
+    padding-top: 30vh;
+}
+.page4 h1{
+    font-size: 90px;
+    color: #fff;
+    font-weight: 100;
+}
+@media (max-width:600px) {
+    .page4{
+        min-height: 30vh;
+        width: 100%;
+        padding-left: 10vw;
+        padding-top: 30vh;
+    }
+    .page4 h1{
+        font-size: 30px;
+        color: #fff;
+        font-weight: 100;
+    }
+}
+.page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #3C1A1A;
+    display: flex;
+    padding: 0px 90px;
+}
+.white-images{
+    height: 80vh;
+    width: 40vh;
+    background-color: #fff;
+    margin-top: 20%;
+}
+#wi1{
+    height: 70vh;
+    width: 60vh;
+    background-color: yellow;
+    position: absolute;
+    bottom: -100%;
+    background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/5395/Homepage_IlSentimento_immersivemoodbanner3_CaLustra23.avif);
+    background-position: center;
+    background-size: cover;
+}
+#wi2{
+    height: 55vh;
+    width: 50vh;
+    background-color: red;
+    position: absolute;
+    bottom: -100%;
+    left: 30%;
+    z-index: 99;
+    background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/5394/Homepage_IlSentimento_immersivemoodbanner2_CaLustra23.avif);
+    background-position: center;
+    background-size: cover;
+ 
+}
+#wi3{
+    height: 55vh;
+    width: 50vh;
+    background-color: pink;
+    position: absolute;
+    bottom: -100%;
+    left: 40%;
+    z-index: 999;
+    background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/5393/Homepage_IlSentimento_immersivemoodbanner1_CaLustra23.avif);
+    background-position: center;
+    background-size: cover;
+
+}
+#wi4{
+    height: 70vh;
+    width: 60vh;
+    background-color: green;
+    position: absolute; 
+    bottom: -100%;
+    right: 5%;
+    background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/5396/Homepage_IlSentimento_immersivemoodbanner4_CaLustra23.avif);
+    background-position: center;
+    background-size: cover;
+}
+.page5 h1{
+    font-size: 70px;
+    font-family: freight-s;
+    color: #fff;
+    position: absolute;
+    bottom: 30%;
+    z-index: 9999;
+    opacity: 0;
+    left: 35%;
+    text-align: center;
+}
+@media (max-width:600px) {
+    .page5{
+        height: 100vh;
+        width: 100%;
+        background-color: #3C1A1A;
+        display: flex;
+        padding: 0px 90px;
+    }
+    .white-images{
+        height: 80vh;
+        width: 40vh;
+        background-color: #fff;
+        margin-top: 20%;
+    }
+    #wi1{
+        height: 50vh;
+        width: 60vh;
+        background-color: yellow;
+        position: absolute;
+        bottom: -100%;
+        left: 0%;
+        background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/5395/Homepage_IlSentimento_immersivemoodbanner3_CaLustra23.avif);
+        background-position: center;
+        background-size: cover;
+    }
+    #wi2{
+        height: 70vh;
+        width: 60vh;
+        background-color: red;
+        position: absolute;
+        bottom: -100%;
+        left: 0%;
+        z-index: 9999;
+        display: none;
+        background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/5394/Homepage_IlSentimento_immersivemoodbanner2_CaLustra23.avif);
+        background-position: center;
+        background-size: cover;
+     
+    }
+    #wi3{
+        height: 70vh;
+        width: 60vh;
+        background-color: pink;
+        position: absolute;
+        bottom: -100%;
+        left: 0%;
+        display: none;
+        z-index: 9999;
+        background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/5393/Homepage_IlSentimento_immersivemoodbanner1_CaLustra23.avif);
+        background-position: center;
+        background-size: cover;
+    
+    }
+    #wi4{
+        height: 70vh;
+        width: 60vh;
+        background-color: green;
+        position: absolute; 
+        bottom: -100%;
+        right: 0%;
+        z-index: 99999;
+        display: none;
+        background-image: url(https://webapi.calustra.it/assets/Homepage/Sentimento/_AUTOxAUTO_crop_center-center_none/5396/Homepage_IlSentimento_immersivemoodbanner4_CaLustra23.avif);
+        background-position: center;
+        background-size: cover;
+    }
+    .page5 h1{
+        font-size: 45px;
+        font-family: freight-s;
+        color: #fff;
+        position: absolute;
+        bottom: 60%;
+        z-index: 9999;
+        opacity: 0;
+        left: 5%;
+        text-align: center;
+    }
+}
+.page6{
+    height: 100vh;
+    width: 100%;
+    background-color: #3C1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.page6 p{
+    font-size: 23px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.page6 h1{
+    font-size: 90px;
+    color: #fff;
+    font-family: freight-s;
+    text-align: center;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+.swiper {
+    width: 80%;
+    height: 10vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: #fff; */
+    display: flex;
+    cursor: grab;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 160%;
+    object-fit: cover;
+  }
+  @media (max-width:600px) {
+    .page6{
+        height: 100vh;
+        width: 100%;
+        background-color: #3C1A1A;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .page6 p{
+        font-size: 23px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #fff;
+        margin-bottom: 30px;
+        display: none;
+    }
+    .page6 h1{
+        font-size: 40px;
+        color: #fff;
+        font-family: freight-s;
+        text-align: center;
+        font-weight: 200;
+        margin-bottom: 30px;
+    }
+    .swiper {
+        width: 80%;
+        height: 10vh;
+        display: none;
+      }
+    
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        height: 10vh;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background: #fff; */
+        display: flex;
+        cursor: grab;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .swiper-slide img {
+        display: block;
+        height: 160%;
+        object-fit: cover;
+      }
+  }
+  .page7{
+    height: 170vh;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url(https://webapi.calustra.it/assets/Homepage/Pensiero/_AUTOxAUTO_crop_center-center_none/3988/Homepage_IlPensiero_testcover_CaLustra23.avif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .page7 p{
+    font-size: 30px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .page7 h1{
+    font-size: 180px;
+    color: #ffff;
+    font-family: freight;
+    font-weight: 200;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  @media (max-width:600px) {
+    .page7{
+        height: 100vh;
+        width: 90%;
+        margin-left: 5%;
+        background-color: #fff;
+        border-radius: 500px;
+        background-image: url(https://webapi.calustra.it/assets/Homepage/Pensiero/_AUTOxAUTO_crop_center-center_none/3988/Homepage_IlPensiero_testcover_CaLustra23.avif);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .page7 p{
+        font-size: 15px;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .page7 h1{
+        font-size: 60px;
+        color: #ffff;
+        font-family: freight;
+        font-weight: 200;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  }
+.page8{
+    height: 40vh;
+    width: 100%;
+    background-color: #3C1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.page8 h1{
+    font-size: 80px;
+    flex-shrink: 0;
+    margin-left: 0%;
+    font-weight: 100;
+    color: #755F5D;
+}
+@media (max-width:600px) {
+    .page8{
+        height: 40vh;
+        width: 100%;
+        background-color: #3C1A1A;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .page8 h1{
+        font-size: 40px;
+        flex-shrink: 0;
+        margin-left: 0%;
+        font-weight: 100;
+        color: #755F5D;
+    }
+}
+.page9{
+    height: 100vh;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    display: none;
+    justify-content: center;
+}
+.page9 img{
+    height: 75%;
+    margin-top: 15%;
+        display: none;
+}
+@media (max-width:600px) {
+    .page9{
+        height: 0vh;
+        width: 100%;
+        display: none;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .page9 img{
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+    }
+}
